@@ -1,0 +1,39 @@
+# action.yml
+# https://help.github.com/en/actions/building-actions/creating-a-docker-container-action
+# https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions
+name: ReVIEW build artifact action
+description: PDF / EPUB / HTML generation action due to Re:VIEW(and Review-Template Repository)
+author: "@mhidaka"
+
+branding:
+    color: blue
+    icon: file-text   # from https://feathericons.com/
+
+inputs:
+    target_dir:  # package-lock.jsonがある場所
+        description: directory of the build target. If you use Review-template, you don't need to change it.
+        required: false
+        default: ./
+    config_file:
+        description: "Re:VIEW's build configuration file name (don't include directory path)"
+        required: false
+        default: config.yml  
+    format:
+        description: Output file format. Please choose from PDF, EPUB, HTML.
+        required: false
+        default: PDF
+
+runs:
+    using: docker
+    image: Dockerfile
+    args:
+    - ${{ inputs.target_dir }}
+    - ${{ inputs.format }}
+    - ${{ inputs.config_file }}
+    # pre-entrypoint: 'setup.sh'
+    # entrypoint: 'entrypoint.sh'    # override dockerfile setting
+    # post-entrypoint: 'cleanup.sh'
+
+# outputs:
+#  time: # id of output
+#    description: 'The time we greeted you'
