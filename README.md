@@ -2,10 +2,11 @@
 PDF / EPUB / HTML building action due to Re:VIEW( and Review-Template Repository)
 English is below.
 
-[Re:VIEW](https://github.com/kmuto/review)リポジトリをビルドしてPDFやEPUBを出力するための[GitHub Action](https://github.com/features/actions)で、PDFをビルドしてArtifactsとして保存するものです。
+[Re:VIEW](https://github.com/kmuto/review)リポジトリをビルドしてPDFやEPUBを出力するための[GitHub Action](https://github.com/features/actions)です。
 
-このReVIEW-build-artifact-actionと[ReVIEW-Template](https://github.com/TechBooster/ReVIEW-Template)を使えば、簡単にRe:VIEWをビルドできるようになっています。
-もちろんRe:VIEWビルドができるリポジトリであればテンプレートを使っていなくても成果物を生成でき、PDFがダウンロードできます。
+Re:VIEWファイルからPDFをビルドしてArtifactsとして保存できます。
+
+このReVIEW-build-artifact-actionと[ReVIEW-Template](https://github.com/TechBooster/ReVIEW-Template)を使えば、簡単にRe:VIEWをビルドできるようになっています。もちろんRe:VIEWビルドができるリポジトリであればテンプレートを使っていなくても成果物を生成でき、PDFがダウンロードできます。
 
 開発途中であるため、PDF/EPUB/HTMLのうち**PDF**での出力のみ対応しています。
 
