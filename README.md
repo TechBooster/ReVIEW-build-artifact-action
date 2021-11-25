@@ -1,6 +1,14 @@
+
 # ReVIEW-build-artifact-action
 PDF / EPUB / HTML building action due to Re:VIEW( and Review-Template Repository)
 English is below.
+
+## 2021年11月26日以降の実行でエラーがでたら
+
+`TechBooster/ReVIEW-build-artifact-action@master` をRe:VIEW 5.3にアップデートしました。
+引き続きRe:VIEW 4.0を使いたい場合、Actionsは `TechBooster/ReVIEW-build-artifact-action@master` のかわりに `TechBooster/ReVIEW-build-artifact-action@v0.9.0` を指定してください。 
+
+## 概要
 
 [Re:VIEW](https://github.com/kmuto/review)リポジトリをビルドしてPDFやEPUBを出力するための[GitHub Action](https://github.com/features/actions)です。
 
