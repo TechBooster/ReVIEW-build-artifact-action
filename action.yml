@@ -19,9 +19,9 @@ inputs:
         required: false
         default: config.yml  
     format:
-        description: Output file format. Please choose from PDF, EPUB, HTML.
+        description: Output file format. Please choose from pdf, epub, html.
         required: false
-        default: PDF
+        default: pdf
 
 runs:
     using: docker
