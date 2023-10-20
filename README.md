@@ -66,5 +66,14 @@ TODO
 |  パラメータ  |  説明  | 利用例 |
 | :---- | :---- | :---- |
 |  `target_dir`  |  ビルド対象があるディレクトリ（未指定の場合は `./` を利用する） | あとで書く | 
-|  `config_file`  |  Configファイル名を指定する（未指定の場合は `config.yml` を利用する） | 未サポート。今後実装されます |
+|  `config_file`  |  Configファイル名を指定する（未指定の場合は `config.yml` を利用する） | 後述 |
 | `format` | 出力フォーマットを（PDF,EPUB,HTML）から指定 | 未サポート。今後実装されます |
+
+#### `config_file`パラメータ利用例
+
+```yml
+  # Configファイル名を指定して、Re:VIEWファイルをビルドする
+  uses: TechBooster/ReVIEW-build-artifact-action@master
+  with:
+    config_file: config-ebook.yml
+```
