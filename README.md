@@ -10,7 +10,7 @@ English is below.
 
 ## 概要
 
-[Re:VIEW](https://github.com/kmuto/review)リポジトリをビルドしてPDFやEPUBを出力するための[GitHub Action](https://github.com/features/actions)です。
+[Re:VIEW](https://github.com/kmuto/review)リポジトリをビルドしてPDFやEPUBを出力するための[GitHub Action](https://github.com/features/actions)です。Re:VIEW 5.9を使用しています。
 
 Re:VIEWファイルからPDFをビルドしてArtifactsとして保存できます。
 
