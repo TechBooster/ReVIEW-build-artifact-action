@@ -4,8 +4,6 @@
 [ -z "${INPUT_CONFIG_FILE}" ] && { echo "Need to set CONFIG_FILE. Default is 'config.yml'"; exit 1; }
 [ -z "${INPUT_FORMAT}" ] && { echo "Need to set INPUT_FORMAT. Default is 'PDF'"; exit 1; }
 
-# TODO Enable env paramaters that only INPUT_TARGET_DIR works well.
-
 echo "Run Initialization and build step"
-cd $INPUT_TARGET_DIR && bundle install && npm install && npm run pdf
+cd "$INPUT_TARGET_DIR" && bundle install && npm install && REVIEW_CONFIG_FILE="$INPUT_CONFIG_FILE" npm run "$INPUT_FORMAT"
 echo "Finish build step"

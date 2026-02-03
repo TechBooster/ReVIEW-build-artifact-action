@@ -16,8 +16,6 @@ Re:VIEWファイルからPDFをビルドしてArtifactsとして保存できま�
 
 このReVIEW-build-artifact-actionと[ReVIEW-Template](https://github.com/TechBooster/ReVIEW-Template)を使えば、簡単にRe:VIEWをビルドできるようになっています。もちろんRe:VIEWビルドができるリポジトリであればテンプレートを使っていなくても成果物を生成でき、PDFがダウンロードできます。
 
-開発途中であるため、PDF/EPUB/HTMLのうち**PDF**での出力のみ対応しています。
-
 ＜動作イメージ図＞
 
 ## 利用方法
@@ -61,10 +59,10 @@ TODO
 
 ### 設定できるパラメータ
 
-設定できるパラメータは次の３つで、いずれも省略可能です（必須ではありません）。現時点では `target_dir` 以外のパラメータをサポートしていません。
+設定できるパラメータは次の３つで、いずれも省略可能です（必須ではありません）。
 
 |  パラメータ  |  説明  | 利用例 |
 | :---- | :---- | :---- |
 |  `target_dir`  |  ビルド対象があるディレクトリ（未指定の場合は `./` を利用する） | あとで書く | 
-|  `config_file`  |  Configファイル名を指定する（未指定の場合は `config.yml` を利用する） | 未サポート。今後実装されます |
-| `format` | 出力フォーマットを（PDF,EPUB,HTML）から指定 | 未サポート。今後実装されます |
+|  `config_file`  |  Configファイル名を指定する（未指定の場合は `config.yml` を利用する） | `with:`<br>&nbsp;&nbsp;`config_file: config-ebook.yml` |
+| `format` | 出力フォーマットを（pdf,epub,html）から指定 | `with:`<br>&nbsp;&nbsp;`format: epub` |
